@@ -15,23 +15,8 @@
 		EB7503A517F3160D00CE5E76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503A417F3160D00CE5E76 /* AppDelegate.m */; };
 		EB7503AB17F3160D00CE5E76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503AA17F3160D00CE5E76 /* ViewController.m */; };
 		EB7503AD17F3160D00CE5E76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7503AC17F3160D00CE5E76 /* Images.xcassets */; };
-		EB7503B417F3160D00CE5E76 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7503B317F3160D00CE5E76 /* XCTest.framework */; };
-		EB7503B517F3160D00CE5E76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB75039417F3160D00CE5E76 /* Foundation.framework */; };
-		EB7503B617F3160D00CE5E76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB75039817F3160D00CE5E76 /* UIKit.framework */; };
-		EB7503BE17F3160E00CE5E76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB7503BC17F3160E00CE5E76 /* InfoPlist.strings */; };
-		EB7503C017F3160E00CE5E76 /* refreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503BF17F3160E00CE5E76 /* refreshTests.m */; };
-		EB7503CB17F316FC00CE5E76 /* UIScrollView+LNRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503CA17F316FC00CE5E76 /* UIScrollView+LNRefresh.m */; };
+		EB7503CF17F327B100CE5E76 /* UIScrollView+LNRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503CE17F327B100CE5E76 /* UIScrollView+LNRefresh.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EB7503B717F3160D00CE5E76 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB75038917F3160D00CE5E76 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB75039017F3160D00CE5E76;
-			remoteInfo = refresh;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EB75039117F3160D00CE5E76 /* refresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = refresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,13 +32,9 @@
 		EB7503A917F3160D00CE5E76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EB7503AA17F3160D00CE5E76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB7503AC17F3160D00CE5E76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		EB7503B217F3160D00CE5E76 /* refreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = refreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7503B317F3160D00CE5E76 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EB7503BB17F3160E00CE5E76 /* refreshTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "refreshTests-Info.plist"; sourceTree = "<group>"; };
-		EB7503BD17F3160E00CE5E76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EB7503BF17F3160E00CE5E76 /* refreshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = refreshTests.m; sourceTree = "<group>"; };
-		EB7503C917F316FC00CE5E76 /* UIScrollView+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LNRefresh.h"; sourceTree = "<group>"; };
-		EB7503CA17F316FC00CE5E76 /* UIScrollView+LNRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LNRefresh.m"; sourceTree = "<group>"; };
+		EB7503CD17F327B100CE5E76 /* UIScrollView+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LNRefresh.h"; sourceTree = "<group>"; };
+		EB7503CE17F327B100CE5E76 /* UIScrollView+LNRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LNRefresh.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,16 +48,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB7503AF17F3160D00CE5E76 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EB7503B417F3160D00CE5E76 /* XCTest.framework in Frameworks */,
-				EB7503B617F3160D00CE5E76 /* UIKit.framework in Frameworks */,
-				EB7503B517F3160D00CE5E76 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				EB75039A17F3160D00CE5E76 /* refresh */,
-				EB7503B917F3160D00CE5E76 /* refreshTests */,
 				EB75039317F3160D00CE5E76 /* Frameworks */,
 				EB75039217F3160D00CE5E76 /* Products */,
 			);
@@ -94,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				EB75039117F3160D00CE5E76 /* refresh.app */,
-				EB7503B217F3160D00CE5E76 /* refreshTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,8 +86,7 @@
 				EB7503A417F3160D00CE5E76 /* AppDelegate.m */,
 				EB7503A917F3160D00CE5E76 /* ViewController.h */,
 				EB7503AA17F3160D00CE5E76 /* ViewController.m */,
-				EB7503C917F316FC00CE5E76 /* UIScrollView+LNRefresh.h */,
-				EB7503CA17F316FC00CE5E76 /* UIScrollView+LNRefresh.m */,
+				EB7503CC17F327B100CE5E76 /* sources */,
 				EB7503AC17F3160D00CE5E76 /* Images.xcassets */,
 				EB75039B17F3160D00CE5E76 /* Supporting Files */,
 			);
@@ -136,22 +104,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EB7503B917F3160D00CE5E76 /* refreshTests */ = {
+		EB7503CC17F327B100CE5E76 /* sources */ = {
 			isa = PBXGroup;
 			children = (
-				EB7503BF17F3160E00CE5E76 /* refreshTests.m */,
-				EB7503BA17F3160E00CE5E76 /* Supporting Files */,
+				EB7503CD17F327B100CE5E76 /* UIScrollView+LNRefresh.h */,
+				EB7503CE17F327B100CE5E76 /* UIScrollView+LNRefresh.m */,
 			);
-			path = refreshTests;
-			sourceTree = "<group>";
-		};
-		EB7503BA17F3160E00CE5E76 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EB7503BB17F3160E00CE5E76 /* refreshTests-Info.plist */,
-				EB7503BC17F3160E00CE5E76 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			path = sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,24 +133,6 @@
 			productReference = EB75039117F3160D00CE5E76 /* refresh.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EB7503B117F3160D00CE5E76 /* refreshTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EB7503C617F3160E00CE5E76 /* Build configuration list for PBXNativeTarget "refreshTests" */;
-			buildPhases = (
-				EB7503AE17F3160D00CE5E76 /* Sources */,
-				EB7503AF17F3160D00CE5E76 /* Frameworks */,
-				EB7503B017F3160D00CE5E76 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EB7503B817F3160D00CE5E76 /* PBXTargetDependency */,
-			);
-			name = refreshTests;
-			productName = refreshTests;
-			productReference = EB7503B217F3160D00CE5E76 /* refreshTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,11 +141,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = diditech;
-				TargetAttributes = {
-					EB7503B117F3160D00CE5E76 = {
-						TestTargetID = EB75039017F3160D00CE5E76;
-					};
-				};
 			};
 			buildConfigurationList = EB75038C17F3160D00CE5E76 /* Build configuration list for PBXProject "refresh" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -220,7 +156,6 @@
 			projectRoot = "";
 			targets = (
 				EB75039017F3160D00CE5E76 /* refresh */,
-				EB7503B117F3160D00CE5E76 /* refreshTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,14 +170,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB7503B017F3160D00CE5E76 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EB7503BE17F3160E00CE5E76 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,44 +177,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7503CF17F327B100CE5E76 /* UIScrollView+LNRefresh.m in Sources */,
 				EB7503AB17F3160D00CE5E76 /* ViewController.m in Sources */,
 				EB7503A517F3160D00CE5E76 /* AppDelegate.m in Sources */,
 				EB7503A117F3160D00CE5E76 /* main.m in Sources */,
-				EB7503CB17F316FC00CE5E76 /* UIScrollView+LNRefresh.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB7503AE17F3160D00CE5E76 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EB7503C017F3160E00CE5E76 /* refreshTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EB7503B817F3160D00CE5E76 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EB75039017F3160D00CE5E76 /* refresh */;
-			targetProxy = EB7503B717F3160D00CE5E76 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EB75039D17F3160D00CE5E76 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EB75039E17F3160D00CE5E76 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		EB7503BC17F3160E00CE5E76 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB7503BD17F3160E00CE5E76 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -393,48 +296,6 @@
 			};
 			name = Release;
 		};
-		EB7503C717F3160E00CE5E76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/refresh.app/refresh";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "refresh/refresh-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "refreshTests/refreshTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		EB7503C817F3160E00CE5E76 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/refresh.app/refresh";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "refresh/refresh-Prefix.pch";
-				INFOPLIST_FILE = "refreshTests/refreshTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -454,14 +315,7 @@
 				EB7503C517F3160E00CE5E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		EB7503C617F3160E00CE5E76 /* Build configuration list for PBXNativeTarget "refreshTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB7503C717F3160E00CE5E76 /* Debug */,
-				EB7503C817F3160E00CE5E76 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

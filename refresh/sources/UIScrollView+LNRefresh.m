@@ -136,7 +136,7 @@ static float kRefreshHeight = 44;
     _isRefreshing = YES;
     _refreshIndicator.hidden = NO;
     _refreshLabel.hidden = YES;
-//    _refreshLabel.text = NSLocalizedString(@"下拉刷新",nil);
+    _refreshLabel.text = NSLocalizedString(@"下拉刷新",nil);
     [_refreshIndicator startAnimating];
     if (hidden) {
         [self.scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
@@ -174,10 +174,7 @@ static float kRefreshHeight = 44;
             if (self.viewType == RefreshViewTypePull) {
                 self.scrollView.contentOffset = CGPointZero;
             }else if (self.viewType == RefreshViewTypeLoadMore){
-                NSLog(@"%f",self.scrollView.contentSize.height);
-                NSLog(@"%f",self.scrollView.bounds.size.height);
-                
-                self.scrollView.contentOffset = CGPointMake(0, self.scrollView.contentOffset.y + 1);  //add 1 to scroll for showing
+                self.scrollView.contentOffset = CGPointMake(0, self.scrollView.contentOffset.y + 1);  //add 1px for showing
             }
         } completion:^(BOOL finished) {
             if (self.viewType == RefreshViewTypePull) {
@@ -191,9 +188,10 @@ static float kRefreshHeight = 44;
             
             [UIView animateWithDuration:0.25 animations:^{
                 self.scrollView.contentInset = UIEdgeInsetsZero;
+            } completion:^(BOOL finished) {
+                self.scrollView.contentInset = UIEdgeInsetsZero;
             }];
-            
-         //   self.scrollView.contentInset = UIEdgeInsetsZero;
+
             _refreshState = RefreshControlStateNormal;
         }];
     });

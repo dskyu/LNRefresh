@@ -27,7 +27,7 @@
         _tableView = [[UITableView alloc] initWithFrame:bounds style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        _tableView.backgroundColor = [UIColor redColor];
+        _tableView.backgroundColor = [UIColor clearColor];
         [self.view addSubview:_tableView];
     }
     return _tableView;
@@ -41,8 +41,8 @@
 	[self setupDataSource];
     
     
-    self.view.backgroundColor = [UIColor yellowColor];
-    self.tableView.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+
     
     __weak typeof(self) weakSelf = self;
     
@@ -75,7 +75,7 @@
 
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self.tableView.pullToRefreshView triggerRefreshAnyWayWithControlHidden:YES];
+    [self.tableView.pullToRefreshView triggerRefreshAnyWayWithControlHidden:NO];
 }
 
 #pragma mark - Actions
