@@ -15,7 +15,7 @@
 		EB7503A517F3160D00CE5E76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503A417F3160D00CE5E76 /* AppDelegate.m */; };
 		EB7503AB17F3160D00CE5E76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503AA17F3160D00CE5E76 /* ViewController.m */; };
 		EB7503AD17F3160D00CE5E76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7503AC17F3160D00CE5E76 /* Images.xcassets */; };
-		EB7503CF17F327B100CE5E76 /* UIScrollView+LNRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503CE17F327B100CE5E76 /* UIScrollView+LNRefresh.m */; };
+		EB7503D317F32A3B00CE5E76 /* UIScrollView+LNRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503D217F32A3B00CE5E76 /* UIScrollView+LNRefresh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +33,8 @@
 		EB7503AA17F3160D00CE5E76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB7503AC17F3160D00CE5E76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EB7503B317F3160D00CE5E76 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EB7503CD17F327B100CE5E76 /* UIScrollView+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LNRefresh.h"; sourceTree = "<group>"; };
-		EB7503CE17F327B100CE5E76 /* UIScrollView+LNRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LNRefresh.m"; sourceTree = "<group>"; };
+		EB7503D117F32A3B00CE5E76 /* UIScrollView+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LNRefresh.h"; sourceTree = "<group>"; };
+		EB7503D217F32A3B00CE5E76 /* UIScrollView+LNRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LNRefresh.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 				EB7503A417F3160D00CE5E76 /* AppDelegate.m */,
 				EB7503A917F3160D00CE5E76 /* ViewController.h */,
 				EB7503AA17F3160D00CE5E76 /* ViewController.m */,
-				EB7503CC17F327B100CE5E76 /* sources */,
+				EB7503D017F32A3B00CE5E76 /* LNRefresh */,
 				EB7503AC17F3160D00CE5E76 /* Images.xcassets */,
 				EB75039B17F3160D00CE5E76 /* Supporting Files */,
 			);
@@ -104,13 +104,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EB7503CC17F327B100CE5E76 /* sources */ = {
+		EB7503D017F32A3B00CE5E76 /* LNRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				EB7503CD17F327B100CE5E76 /* UIScrollView+LNRefresh.h */,
-				EB7503CE17F327B100CE5E76 /* UIScrollView+LNRefresh.m */,
+				EB7503D117F32A3B00CE5E76 /* UIScrollView+LNRefresh.h */,
+				EB7503D217F32A3B00CE5E76 /* UIScrollView+LNRefresh.m */,
 			);
-			path = sources;
+			path = LNRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB7503CF17F327B100CE5E76 /* UIScrollView+LNRefresh.m in Sources */,
 				EB7503AB17F3160D00CE5E76 /* ViewController.m in Sources */,
 				EB7503A517F3160D00CE5E76 /* AppDelegate.m in Sources */,
 				EB7503A117F3160D00CE5E76 /* main.m in Sources */,
+				EB7503D317F32A3B00CE5E76 /* UIScrollView+LNRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
