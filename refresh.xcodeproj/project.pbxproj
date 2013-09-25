@@ -13,7 +13,6 @@
 		EB75039F17F3160D00CE5E76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB75039D17F3160D00CE5E76 /* InfoPlist.strings */; };
 		EB7503A117F3160D00CE5E76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503A017F3160D00CE5E76 /* main.m */; };
 		EB7503A517F3160D00CE5E76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503A417F3160D00CE5E76 /* AppDelegate.m */; };
-		EB7503A817F3160D00CE5E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7503A617F3160D00CE5E76 /* Main.storyboard */; };
 		EB7503AB17F3160D00CE5E76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503AA17F3160D00CE5E76 /* ViewController.m */; };
 		EB7503AD17F3160D00CE5E76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7503AC17F3160D00CE5E76 /* Images.xcassets */; };
 		EB7503B417F3160D00CE5E76 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7503B317F3160D00CE5E76 /* XCTest.framework */; };
@@ -21,6 +20,7 @@
 		EB7503B617F3160D00CE5E76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB75039817F3160D00CE5E76 /* UIKit.framework */; };
 		EB7503BE17F3160E00CE5E76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB7503BC17F3160E00CE5E76 /* InfoPlist.strings */; };
 		EB7503C017F3160E00CE5E76 /* refreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503BF17F3160E00CE5E76 /* refreshTests.m */; };
+		EB7503CB17F316FC00CE5E76 /* UIScrollView+LNRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7503CA17F316FC00CE5E76 /* UIScrollView+LNRefresh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		EB7503A217F3160D00CE5E76 /* refresh-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "refresh-Prefix.pch"; sourceTree = "<group>"; };
 		EB7503A317F3160D00CE5E76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB7503A417F3160D00CE5E76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB7503A717F3160D00CE5E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB7503A917F3160D00CE5E76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EB7503AA17F3160D00CE5E76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB7503AC17F3160D00CE5E76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,8 @@
 		EB7503BB17F3160E00CE5E76 /* refreshTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "refreshTests-Info.plist"; sourceTree = "<group>"; };
 		EB7503BD17F3160E00CE5E76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB7503BF17F3160E00CE5E76 /* refreshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = refreshTests.m; sourceTree = "<group>"; };
+		EB7503C917F316FC00CE5E76 /* UIScrollView+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LNRefresh.h"; sourceTree = "<group>"; };
+		EB7503CA17F316FC00CE5E76 /* UIScrollView+LNRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LNRefresh.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +115,10 @@
 			children = (
 				EB7503A317F3160D00CE5E76 /* AppDelegate.h */,
 				EB7503A417F3160D00CE5E76 /* AppDelegate.m */,
-				EB7503A617F3160D00CE5E76 /* Main.storyboard */,
 				EB7503A917F3160D00CE5E76 /* ViewController.h */,
 				EB7503AA17F3160D00CE5E76 /* ViewController.m */,
+				EB7503C917F316FC00CE5E76 /* UIScrollView+LNRefresh.h */,
+				EB7503CA17F316FC00CE5E76 /* UIScrollView+LNRefresh.m */,
 				EB7503AC17F3160D00CE5E76 /* Images.xcassets */,
 				EB75039B17F3160D00CE5E76 /* Supporting Files */,
 			);
@@ -230,7 +232,6 @@
 			files = (
 				EB7503AD17F3160D00CE5E76 /* Images.xcassets in Resources */,
 				EB75039F17F3160D00CE5E76 /* InfoPlist.strings in Resources */,
-				EB7503A817F3160D00CE5E76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +253,7 @@
 				EB7503AB17F3160D00CE5E76 /* ViewController.m in Sources */,
 				EB7503A517F3160D00CE5E76 /* AppDelegate.m in Sources */,
 				EB7503A117F3160D00CE5E76 /* main.m in Sources */,
+				EB7503CB17F316FC00CE5E76 /* UIScrollView+LNRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,14 +282,6 @@
 				EB75039E17F3160D00CE5E76 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		EB7503A617F3160D00CE5E76 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB7503A717F3160D00CE5E76 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		EB7503BC17F3160E00CE5E76 /* InfoPlist.strings */ = {
@@ -334,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -367,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
