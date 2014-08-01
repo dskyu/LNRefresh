@@ -15,9 +15,9 @@
 - (void)addPullRefreshWithActionHandler:(void (^)(void))actionHandler;
 - (void)addLoadMoreWithActionHandler:(void (^)(void))actionHandler;
 
-- (void)remove;
+- (void)removeRefresh;
 
-@property (nonatomic, strong) LNRefresh *pullToRefreshView;
+@property (nonatomic, strong) LNRefresh *pullRefreshView;
 @property (nonatomic, strong) LNRefresh *loadMoreView;
 
 @end
@@ -38,15 +38,20 @@ typedef enum {
 @property (nonatomic, strong) UILabel *refreshLabel;
 @property (nonatomic, strong) UIActivityIndicatorView *refreshIndicator;
 @property (nonatomic, weak, readonly) UIScrollView *scrollView;
+@property (nonatomic, assign) CGFloat baseEdgeInsetsTop;
 
+@property (nonatomic, strong) NSString *normalTips;
+@property (nonatomic, strong) NSString *overflowTips;
+@property (nonatomic, strong) NSString *loadingTips;
 
+- (void)triggerRefreshAnyWayInBackground;
 - (void)triggerRefreshAnyWayWithControlHidden:(BOOL)hidden;
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate;
+- (void)endRefreshWithAnimation:(BOOL)animation;
 - (void)endRefresh;
 - (void)endRefreshWithInfo:(NSString *)info;
 - (void)endRefreshWithDelay:(CGFloat)delay;
-- (void)endRefreshWithInfo:(NSString *)info delay:(CGFloat)delay;
 
 @end
